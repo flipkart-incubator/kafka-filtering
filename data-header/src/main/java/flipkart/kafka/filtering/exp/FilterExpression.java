@@ -9,13 +9,7 @@ import java.util.Map;
  */
 public abstract class FilterExpression {
 
-    protected abstract boolean isInteresting(Map<String, String> tags);
-
-//    public final boolean isInteresting(FB_FilterWrap filterWrapper) {
-//        return isInteresting(
-//                Codec.getTags(filterWrapper)
-//        );
-//    }
+    public abstract boolean isInteresting(Map<String, String> tags);
 
     public final boolean isInteresting(FilterWrapper filterWrapper) {
         return isInteresting(

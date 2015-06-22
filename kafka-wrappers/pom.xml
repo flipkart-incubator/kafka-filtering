@@ -4,22 +4,22 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
+    <artifactId>kafka-wrappers</artifactId>
     <groupId>flipkart.3p.kafka.filtering</groupId>
-    <artifactId>exp-filtering-mvel</artifactId>
     <version>1.0-SNAPSHOT</version>
 
+    <parent>
+        <groupId>flipkart.3p.kafka</groupId>
+        <artifactId>kafka-filtering</artifactId>
+        <version>1.0-SNAPSHOT</version>
+    </parent>
+
     <dependencies>
-        <dependency>
-            <groupId>org.mvel</groupId>
-            <artifactId>mvel2</artifactId>
-            <version>2.0.18</version>
-        </dependency>
 
         <dependency>
             <groupId>flipkart.3p.kafka.filtering</groupId>
             <artifactId>data-header</artifactId>
             <version>1.0-SNAPSHOT</version>
-            <scope>provided</scope>
         </dependency>
 
     </dependencies>

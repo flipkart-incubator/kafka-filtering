@@ -13,6 +13,7 @@
         <module>data-header</module>
         <module>flatbuffers</module>
         <module>exp-filtering-mvel</module>
+        <module>kafka-wrappers</module>
     </modules>
 
 
