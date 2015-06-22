@@ -1,8 +1,0 @@
-namespace flipkart.kafka.filtering.fds;
-
-table FilterWrap {
-    tags:[string];
-    data:[ubyte];
-}
-
-root_type FilterWrap;

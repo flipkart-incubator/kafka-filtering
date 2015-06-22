@@ -2,10 +2,11 @@
 
 package flipkart.kafka.filtering.fds;
 
-import java.nio.*;
-import java.lang.*;
-import java.util.*;
-import com.google.flatbuffers.*;
+import com.google.flatbuffers.FlatBufferBuilder;
+import com.google.flatbuffers.Table;
+
+import java.nio.ByteBuffer;
+import java.nio.ByteOrder;
 
 public final class FB_Tuple extends Table {
   public static FB_Tuple getRootAsFB_Tuple(ByteBuffer _bb) { return getRootAsFB_Tuple(_bb, new FB_Tuple()); }
