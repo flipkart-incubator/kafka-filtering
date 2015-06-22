@@ -1,0 +1,13 @@
+namespace flipkart.kafka.filtering.fds;
+
+table FB_Tuple { 
+	k:string;
+	v:string;
+}
+
+table FB_FilterWrap {
+    tags:[FB_Tuple];
+    data:[ubyte];
+}
+
+root_type FB_FilterWrap;
