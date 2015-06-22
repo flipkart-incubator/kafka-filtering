@@ -11,7 +11,7 @@ import java.util.Map;
  */
 public class FilterTest {
 
-    private static byte[] DATA = "guasdak".getBytes();
+    private static byte[] DATA = "qwertyuiokjhgfdrtyhjbnvcfjkbvcfyhkjnfguhkjbnbvcxfgdfyugkhjbxdtyuihcgdyfuijknxbzcvhgsuahjxzbcvnghfsahjxzcvhsfayghjbXCHSFAYGkjbasdajgkbCSAGjkbsdhfgjq   bsdhgajbsdhgajbsdgahjsdgahjkbsdgabjsdhghjqbsdfyaguhsdfyguq  hdsyguhqdgushbacvbnzxchjdshq    jnsadvgsuhwqdfuwnbd".getBytes();
     private static Map<String,String> tags = new HashMap<String, String>() {{
         put("entity", "ORDER");
         put("type", "CREATED");
