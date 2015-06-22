@@ -6,3 +6,6 @@ pom.xml.next
 release.properties
 dependency-reduced-pom.xml
 buildNumber.properties
+kafka-filtering.iml
+kafka-filtering.ipr
+kafka-filtering.iws
