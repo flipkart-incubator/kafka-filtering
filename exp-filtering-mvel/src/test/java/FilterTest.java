@@ -18,8 +18,8 @@ public class FilterTest {
         put("long", "1283102390123");
     }};
     private static Codec codec = new Codec();
-    private static FilterExpression trueExpression = new MvelExpression("entity==1");
-    private static FilterExpression falseExpression = new MvelExpression("entity=='ORDER' && type == 'CREATED'");
+    private static FilterExpression falseExpression = new MvelExpression("entity==1");
+    private static FilterExpression trueExpression = new MvelExpression("entity=='ORDER' && type == 'CREATED'");
 
     public static void main(String args[]) {
 
@@ -42,7 +42,7 @@ public class FilterTest {
         /** WARMUP **/
         {
             FilterWrapper wrappedMsg = codec.decode(encoded);
-            falseExpression.isInteresting(wrappedMsg);
+            trueExpression.isInteresting(wrappedMsg);
         }
         /** WARMUP ENDS**/
 

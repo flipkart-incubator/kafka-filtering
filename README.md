@@ -10,5 +10,9 @@ This solves the problem by having headers (Map<String,String>) which gets encode
 
 At the integration level, all you need to do is to pass headers (Map<String,String>) along with your data & at consumer level you can give an MVEL expression (grep filter expression what consumer wants).
 
+Example code: 
+https://github.com/flipkart-incubator/kafka-filtering/blob/master/exp-filtering-mvel/src/test/java/FilterTest.java
+
+
 
 
