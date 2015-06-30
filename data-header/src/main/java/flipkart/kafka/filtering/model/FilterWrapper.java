@@ -1,6 +1,5 @@
 package flipkart.kafka.filtering.model;
 
-import java.nio.ByteBuffer;
 import java.util.Map;
 
 /**
@@ -10,7 +9,7 @@ public class FilterWrapper {
 
     Map<String, String> tags;
 
-    ByteBuffer data;
+    byte[] data;
 
     public Map<String, String> getTags() {
         return tags;
@@ -20,11 +19,11 @@ public class FilterWrapper {
         this.tags = tags;
     }
 
-    public ByteBuffer getData() {
+    public byte[] getData() {
         return data;
     }
 
-    public void setData(ByteBuffer data) {
+    public void setData(byte[] data) {
         this.data = data;
     }
 }

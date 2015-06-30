@@ -53,7 +53,10 @@ public class Codec {
         FB_FilterWrap fbWrapper = FB_FilterWrap.getRootAsFB_FilterWrap(bb);
 
         FilterWrapper wrapper = new FilterWrapper();
-        wrapper.setData(fbWrapper.dataAsByteBuffer());
+
+        byte[] dataBuffer = new byte[fbWrapper.dataLength()];
+        fbWrapper.dataAsByteBuffer().get(dataBuffer, 0, fbWrapper.dataLength());
+        wrapper.setData(dataBuffer);
         wrapper.setTags(getTags(fbWrapper));
         return wrapper;
     }
